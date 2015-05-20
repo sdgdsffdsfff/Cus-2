@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingTop="5dp"
+    android:paddingBottom="5dp" >
+
+    <Button
+        android:id="@+id/bt_load_more"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:hint="加 载 更 多"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:textColor="@color/lightgray"
+        android:textSize="@dimen/text_size_small"
+        android:background="@drawable/xu_kuang"
+        android:layout_centerInParent="true" />
+
+    <LinearLayout
+        android:id="@+id/ll_loading"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:gravity="center"
+        android:visibility="invisible">
+
+        <ProgressBar
+            style="?android:attr/progressBarStyleSmall"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_small"
+            android:text="正在加载"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

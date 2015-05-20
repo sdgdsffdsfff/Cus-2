@@ -1,0 +1,89 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.suning.cus.activity.QueryAccessOrderDetailsActivity">
+
+    <ListView
+        android:id="@+id/lv_atp_check_response"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@+id/ll_atp_check_response_account">
+
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/ll_atp_check_response_account"
+        android:layout_width="fill_parent"
+        android:layout_height="60dp"
+        android:layout_above="@+id/ll_atp_result_ops"
+        android:background="@drawable/xu_kuang"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:gravity="center"
+        android:paddingLeft="25dp" >
+
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_alignParentBottom="true"
+            android:textSize="@dimen/text_size_large"
+            android:text="商品总额: " />
+
+        <TextView
+            android:id="@+id/tv_atp_total_payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_large"
+            android:textColor="@color/red"
+            android:text="0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_large"
+            android:textColor="@color/red"
+            android:text="元" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_atp_result_ops"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:background="@android:color/transparent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" >
+
+        <Button
+            android:id="@+id/bt_atp_res_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_size_large"
+            android:textColor="@color/white"
+            android:background="@drawable/bt_fitting_back_ok"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:text="确定"
+            android:onClick="operationAfterAtp" />
+
+        <Button
+            android:id="@+id/bt_atp_res_cancel"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_size_large"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bt_fitting_back_cancel"
+            android:text="取消"
+            android:onClick="cancelAfterAtp" />
+
+    </LinearLayout>
+
+</RelativeLayout>

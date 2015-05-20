@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <LinearLayout
+        android:id="@+id/ll_item_task_summary"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@drawable/card_avatar_bar">
+
+        <TextView
+            android:id="@+id/tv_item_date"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginBottom="@dimen/text_size_normal"
+            android:layout_marginLeft="@dimen/text_size_normal"
+            android:layout_marginTop="@dimen/text_size_normal"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/text_size_normal"
+            android:text="2014-03-14" />
+
+        <TextView
+            android:id="@+id/tv_item_task_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/text_size_normal"
+            android:layout_weight="1"
+            android:drawablePadding="@dimen/text_size_normal"
+            android:text="24单" />
+
+
+        <TextView
+            android:id="@+id/tv_item_unfinished_task_num"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginRight="@dimen/text_size_normal"
+            android:background="@drawable/bg_number"
+            android:gravity="center"
+            android:text="2"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_normal" />
+
+
+        <ImageView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:layout_marginLeft="4dp"
+            android:layout_marginRight="@dimen/text_size_normal"
+            android:src="@drawable/ic_global_arrow_right_2px" />
+    </LinearLayout>
+
+
+</RelativeLayout>

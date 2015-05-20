@@ -1,0 +1,86 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_suning"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height_default"
+        android:orientation="horizontal"
+        android:layout_marginTop="@dimen/layout_height_space">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/text_size_xlarge"
+            android:text="@string/label_appliance_type_suning" />
+
+        <EditText
+            android:id="@+id/et_search_suning"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/iv_search_suning"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="26dp"
+            android:src="@drawable/search_icon"
+            android:onClick="onClick" />
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_factory"
+        android:layout_width="match_parent"
+        android:layout_height="@dimen/layout_height_default"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="@dimen/text_size_xlarge"
+            android:text="@string/label_appliance_type_factory" />
+
+        <EditText
+            android:id="@+id/et_search_factory"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/iv_search_factory"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="5dp"
+            android:layout_marginEnd="26dp"
+            android:layout_marginLeft="5dp"
+            android:layout_marginRight="26dp"
+            android:src="@drawable/search_icon"
+            android:onClick="onClick" />
+
+    </LinearLayout>
+
+
+    <ListView
+        android:id="@+id/lv_list"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent">
+
+
+    </ListView>
+
+</LinearLayout>

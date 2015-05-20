@@ -1,0 +1,143 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="com.suning.cus" >
+
+    <!-- To auto-complete the email text field in the login form with the user's emails -->
+    <uses-permission android:name="android.permission.GET_ACCOUNTS" />
+    <uses-permission android:name="android.permission.READ_PROFILE" />
+    <uses-permission android:name="android.permission.READ_CONTACTS" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.CAMERA" />
+    <uses-permission android:name="android.permission.FLASHLIGHT" />
+    <uses-permission android:name="android.permission.VIBRATE" />
+    <uses-permission android:name="android.permission.MOUNT_UNMOUNT_FILESYSTEMS" />
+    <uses-permission android:name="android.permission.READ_PHONE_STATE"/>
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE"/>
+    <uses-permission android:name="com.android.launcher.permission.INSTALL_SHORTCUT" />
+
+    <uses-feature android:name="android.hardware.camera" />
+    <uses-feature android:name="android.hardware.camera.autofocus" />
+
+    <application
+        android:name=".CusServiceApplication"
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name=".activity.InitialActivity"
+            android:label="@string/app_name"
+            android:hardwareAccelerated="false"
+            android:screenOrientation="portrait" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.LoginActivity"
+            android:configChanges="orientation|keyboardHidden"
+            android:label="@string/title_activity_login"
+            android:windowSoftInputMode="adjustPan|stateHidden"
+            android:screenOrientation="portrait"
+            >
+            <intent-filter>
+                <action android:name="android.intent.action.LOGIN" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".activity.MainActivity"
+            android:label="Main" />
+        <activity
+            android:name=".activity.TaskListActivity"
+            android:label="任务列表" />
+        <activity
+            android:name=".activity.TaskDetailActivity"
+            android:label="任务详情" />
+        <activity
+            android:name=".activity.TaskHistoryActivity"
+            android:label="历史任务" />
+        <activity
+            android:name=".activity.TaskFinishActivity"
+            android:label="销单"
+            android:windowSoftInputMode="stateHidden|adjustPan">
+        </activity>
+        <activity android:name=".activity.SearchMaintainActivity" >
+
+        </activity>
+        <activity android:name=".activity.TaskFinishOtherDayActivity"
+            android:label="次日或另约" >
+
+        </activity>
+
+        <activity  android:name=".activity.TaskCancelActivity"
+            android:label="取消任务" >
+
+        </activity>
+
+        <activity android:name=".activity.OneKeyApplyActivity"
+            android:label="一键申请" >
+
+        </activity>
+        <activity  android:name=".activity.ApplianceTypeApplyActivity"
+            android:label="电器型号申配" >
+
+        </activity>
+        <activity android:name=".activity.MaterialApplyActivity"
+            android:label="配件申请" >
+
+        </activity>
+        <activity android:name=".activity.SearchMaterialActivity"
+            android:label="非配件添加" >
+
+        </activity>
+        <activity android:name=".activity.SearchMaterialLayerActivity"
+            android:label="品牌品类" >
+
+        </activity>
+        <activity
+            android:name="com.zbar.lib.CaptureActivity"
+            android:screenOrientation="portrait"
+            android:theme="@android:style/Theme.Light.NoTitleBar" >
+        </activity>
+        <activity
+            android:name=".activity.WManageActivity"
+            android:label="W库管理" />
+        <activity
+            android:name=".activity.OrderManageActivity"
+            android:label="订单管理" />
+        <activity
+            android:name=".activity.FittingBackActivity"
+            android:label="配件归还" />
+        <activity
+            android:name=".activity.QueryAccessOrderDetailsActivity"
+            android:label="材配订单详情" >
+        </activity>
+        <activity
+            android:name=".activity.ModifyPasswordActivity"
+            android:label="修改密码"
+            android:windowSoftInputMode="adjustResize" >
+        </activity>
+        <activity
+            android:name=".activity.NoticeActivity"
+            android:label="通知" >
+        </activity>
+        <activity
+            android:name=".activity.MessageDetailActivity"
+            android:label="通知详情" >
+        </activity>
+        <activity
+            android:name=".activity.AtpCheckResActivity"
+            android:label="购物车" >
+        </activity>
+        <activity
+            android:name=".activity.BaseActivity" >
+        </activity>
+    </application>
+
+</manifest>

@@ -1,0 +1,58 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="install_mode">
+        <item>壁挂式</item>
+        <item>坐式</item>
+    </string-array>
+
+    <array name="material_apply_types">
+        <item>配件</item>
+        <item>非配件</item>
+    </array>
+
+    <array name="material_apply_types_2">
+        <item>非配件</item>
+    </array>
+
+    <array name="finish_task_reason">
+        <item>顾客因素</item>
+        <item>申配</item>
+    </array>
+
+    <!--非配件添加，物料类型-->
+    <string-array name="material_type1">
+        <item>Z001  经(代)销商品</item>
+        <item>Z010  材料</item>
+        <item>Z011  配件</item>
+        <item>Z022 CRM材料BOM</item>
+    </string-array>
+
+    <string-array name="material_type2">
+        <item>Z001  经(代)销商品</item>
+        <item>Z010  材料</item>
+        <item>Z022 CRM材料BOM</item>
+    </string-array>
+    <!--非配件添加，物料类型-->
+
+    <string-array name="array_time">
+        <item>07:00</item>
+        <item>08:00</item>
+        <item>09:00</item>
+        <item>10:00</item>
+        <item>11:00</item>
+        <item>12:00</item>
+        <item>13:00</item>
+        <item>14:00</item>
+        <item>15:00</item>
+        <item>16:00</item>
+        <item>17:00</item>
+        <item>18:00</item>
+        <item>19:00</item>
+        <item>20:00</item>
+        <item>21:00</item>
+        <item>22:00</item>
+    </string-array>
+
+
+</resources>

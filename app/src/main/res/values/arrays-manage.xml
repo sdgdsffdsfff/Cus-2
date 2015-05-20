@@ -1,0 +1,69 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string-array name="spinner_type_strings">
+        <item>配件申请</item>
+        <item>新件归还</item>
+        <!--item>配件购买</item-->
+        <item>超期购买</item>
+        <item>旧件归还</item>
+        <item>新件消耗</item>
+    </string-array>
+
+    <string-array name="spinner_date_strings">
+        <item>最近一周</item>
+        <item>最近两周</item>
+        <item>最近一个月</item>
+        <item>自定义</item>
+    </string-array>
+
+    <!-- 质保标识 -->
+    <!--01：保内   02：保外  03：延保  04：意外保-->
+    <string-array name="quality_assurance_strings">
+        <item>保内</item>
+        <item>保外</item>
+        <item>延保</item>
+        <item>意外保</item>
+    </string-array>
+
+    <!-- 申请类型 -->
+    <!--1.配件申请  2.新件归还  3.旧件归还  4.新件消耗   5.新件购买  6.配件超期-->
+    <string-array name="source_type_strings">
+        <item>配件申请</item>
+        <item>新件归还</item>
+        <item>旧件归还</item>
+        <item>新件消耗</item>
+        <item>新件购买</item>
+        <item>配件超期</item>
+    </string-array>
+
+    <!-- 装运条件 -->
+    <!--01：配送  02：自提-->
+    <string-array name="shipment_strings">
+        <item>配送</item>
+        <item>自提</item>
+    </string-array>
+
+    <!-- 订单状态 -->
+    <!--“空”：配件操作申请   A：订单创建   B:交货单创建   C:送货完成   D:送货改期
+E:送货取消  F:交货单过账  G:采购订单创建   H:采购入库   M:申请取消    N:订单取消-->
+    <string-array name="order_status_strings">
+        <item>配件操作申请</item>
+        <item>订单创建</item>
+        <item>交货单创建</item>
+        <item>送货完成</item>
+        <item>送货改期</item>
+        <item>送货取消</item>
+        <item>交货单过账</item>
+        <item>采购订单创建</item>
+        <item>采购入库</item>
+        <item>申请取消</item>
+        <item>订单取消</item>
+    </string-array>
+
+    <string-array name="fitting_ops">
+        <item>配件归还</item>
+        <item>配件购买</item>
+    </string-array>
+
+</resources>

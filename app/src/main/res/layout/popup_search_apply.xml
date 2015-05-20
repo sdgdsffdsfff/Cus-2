@@ -1,0 +1,59 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:background="@drawable/bg_popup_search" >
+
+
+    <Button
+        android:id="@+id/one_key_apply"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/title_material_one_key_apply"
+        android:layout_margin="0dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_large"
+        android:background="@null" />
+
+    <View
+        android:id="@+id/one_key_apply_underline"
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white" />
+
+    <Button
+        android:id="@+id/machine_borrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:layout_margin="0dp"
+        android:text="@string/title_appliance_type_apply"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_large"
+        android:background="@null" />
+
+    <View
+        android:layout_width="fill_parent"
+        android:layout_height="1dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@color/white" />
+
+    <Button
+        android:id="@+id/fitting_borrow"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/title_material_apply"
+        android:layout_margin="0dp"
+        android:textColor="@color/white"
+        android:textSize="@dimen/text_size_large"
+        android:background="@null" />
+
+</LinearLayout>

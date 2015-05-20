@@ -1,0 +1,46 @@
+V2.0.1 code 1
+
+环境说明：
+1) 编码：统一 UTF-8
+2) 开发环境：Android Studio, Android SDK 5.0, JDK7
+3) 最低兼容版本 Android sdk4.0(API level 9) 包含及以上
+
+
+类包说明：
+com.suning.cus
+ |- activity   主要的activity和fragment，用于UI交互
+ |- adapter    activity和fragment中的ListView和GridView对应的adapter适配器
+ |- bean       POJO类
+ |- config     关于网络和数据库相关的配置
+ |- constants  程序中用到的一些常量，主要是一些属性的名字
+ |- event      跟EventBus关联的Event类型，可参考EventBus的说明 （https://github.com/greenrobot/EventBus/blob/master/HOWTO.md）
+ |- extras     下来刷新PullToRefresh和EditText的自定义控件
+ |- json       GSON用到的json对象，用于接到网络返回后将json数据转为对象。
+ |- logical    逻辑处理类，主要用于网络或者事物处理，然后通过EventBus发送Event
+ |- module     用于post请求的参数
+ |- update     系统自动升级用到的包
+ |- utils      工具类包
+com.zbar.lib   二维码扫描lib
+
+
+ 程序用到的开源库：
+
+ 1. XUtils (XUtils是一个android的http请求，ioc，orm框架)  ->  https://github.com/wyouflf/xUtils
+ 2. android-pulltorefresh (一个强大的拉动刷新开源项目)  -> https://github.com/chrisbanes/Android-PullToRefresh
+ 3. QrCodeScan (这是Android手机客户端关于二维码扫描的源码，使用了高效的ZBar解码库，并修复了中文乱码) -> https://github.com/SkillCollege/QrCodeScan
+ 4. DebugLog (一个可以打出类名和函数名的Log库)    ->  https://github.com/MustafaFerhan/DebugLog
+ 5. EventBus (EventBus是用于简化应用中各个部件之间通信的一个库, 一个发布 / 订阅的事件总线)  ->  https://github.com/greenrobot/EventBus
+
+
+ 程序中的资源分布：
+ 1. 多分辨率的支持需要放到valuse对应的不同文件里面的dimen中。
+ 2. 文字都需要移到strings.xml中，目前还没有完全达到。
+ 3. 资源文件的命名需要有规范。
+
+ TODO (后续可以优化的地方):
+ 1. EventBus的使用还是有点问题，同一个Event可能会被多个Observer接收到，需要讲Activity或Fragment与Event对应起来，
+    可以只用ID来标识。
+ 2. 任务相关的界面设计的还是有问题，比较丑陋，由于之前时间的限制，直接把之前的布局和相关的代码拷贝过来的，
+    后面有机会需要修改部分的布局。
+ 3. 在出现网络有问题的时候，提示消息有时候会有英文出现，这种情况需要处理一下。
+ 4. 关于Fragment的使用，有一些重复的Fragment需要整理一下。

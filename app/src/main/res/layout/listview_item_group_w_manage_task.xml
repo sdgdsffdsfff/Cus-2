@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_height="66dp"
+    android:layout_width="fill_parent"
+    android:paddingTop="14dp"
+    android:paddingBottom="14dp"
+    android:background="@color/white" >
+
+    <ImageView
+        android:id="@+id/imageview_group_expand"
+        android:layout_width="18dp"
+        android:layout_height="18dp"
+        android:src="@drawable/group_icon_selector"
+        android:layout_centerVertical="true"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="6dp" />
+
+    <LinearLayout
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="fill_parent"
+        android:layout_toRightOf="@id/imageview_group_expand"
+        android:layout_centerVertical="true">
+
+        <TextView
+            android:id="@+id/tv_material_desc"
+            android:layout_width="0dp"
+            android:layout_weight="0.36"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_small"
+            android:text="海尔压缩机散热圈" />
+
+        <TextView
+            android:id="@+id/tv_material_code"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.29"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:textSize="@dimen/text_size_small"
+            android:text="200091" />
+
+        <LinearLayout
+            android:id="@+id/ll_w_detail_order"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.2"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:clickable="true" >
+
+            <TextView
+                android:id="@+id/tv_allow_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="@dimen/text_size_small"
+                android:text="22" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="@dimen/text_size_small"
+                android:text="/" />
+
+            <TextView
+                android:id="@+id/tv_occupy_count"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_gravity="center"
+                android:textSize="@dimen/text_size_small"
+                android:text="8" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="0.14"
+            android:gravity="center"
+            android:layout_gravity="center"
+            android:visibility="gone" >
+
+            <TextView
+                android:id="@+id/tv_material_age"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_normal"
+                android:text="22" />
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_normal"
+                android:text="天" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+</RelativeLayout>

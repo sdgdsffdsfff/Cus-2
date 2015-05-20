@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:background="@color/cl_bg_gray">
+
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent">
+
+        <RelativeLayout
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent">
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:orientation="vertical">
+
+                <TableLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="@dimen/layout_height_space">
+
+                    <TableRow
+                        android:id="@+id/tr_other_date"
+                        android:layout_height="@dimen/layout_height_default"
+                        android:layout_marginBottom="@dimen/layout_height_space"
+                        android:gravity="center">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:text="另约日期："
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_large" />
+
+                        <EditText
+                            android:id="@+id/et_other_date"
+                            android:layout_width="200dp"
+                            android:layout_height="match_parent"
+                            android:gravity="center_vertical"
+                            android:editable="false"
+                            android:focusable="false"
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_large"
+                            android:clickable="true"
+                            android:onClick="onClick" />
+                    </TableRow>
+
+                    <TableRow
+                        android:layout_marginBottom="@dimen/layout_height_space"
+                        android:layout_height="@dimen/layout_height_default">
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:text="原        因："
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_large" />
+
+                        <Spinner
+                            android:id="@+id/sp_reason"
+                            android:layout_width="200dp"
+                            android:layout_height="match_parent" />
+                    </TableRow>
+
+                    <TableRow >
+
+                        <TextView
+                            android:layout_width="wrap_content"
+                            android:layout_height="match_parent"
+                            android:layout_marginLeft="10dp"
+                            android:gravity="center_vertical"
+                            android:text="备        注："
+                            android:textColor="@color/black"
+                            android:textSize="@dimen/text_size_large" />
+
+                        <EditText
+                            android:id="@+id/et_remark"
+                            android:layout_width="200dp"
+                            android:layout_height="wrap_content"
+                            android:gravity="center_vertical"
+                            android:maxLength="20"
+                            android:maxLines="4" />
+                    </TableRow>
+                </TableLayout>
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="right"
+                    android:paddingRight="15dp">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="可输入"
+                        android:textColor="@color/black" />
+
+                    <TextView
+                        android:id="@+id/count"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="20"
+                        android:textColor="@color/red" />
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:text="字"
+                        android:textColor="@color/black" />
+                </LinearLayout>
+
+                <com.suning.cus.extras.ExtraListView
+                    android:id="@+id/lv_materials"
+                    android:layout_width="match_parent"
+                    android:layout_height="match_parent">
+
+                </com.suning.cus.extras.ExtraListView>
+
+                <LinearLayout
+                    android:id="@+id/ll_price_total"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="@dimen/layout_height_space"
+                    android:layout_marginBottom="@dimen/layout_height_space">
+
+                    <TextView
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:paddingLeft="@dimen/layout_width_padding_default"
+                        android:textSize="@dimen/text_size_large"
+                        android:text="商品总额：" />
+
+                    <TextView
+                        android:id="@+id/tv_price_total"
+                        android:layout_width="wrap_content"
+                        android:layout_height="wrap_content"
+                        android:textSize="@dimen/text_size_large"
+                        android:textColor="@color/red"
+                         />
+                </LinearLayout>
+
+
+                <LinearLayout
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginTop="10dp"
+                    android:layout_marginBottom="10dp">
+
+                    <Button
+                        android:id="@+id/bt_apply"
+                        android:layout_width="100dp"
+                        android:layout_height="@dimen/layout_height_default"
+                        style="@style/BlueButtonStyle"
+                        android:layout_marginRight="25dp"
+                        android:text="@string/title_material_apply"
+                        android:onClick="onClick"/>
+
+                    <Button
+                        android:id="@+id/bt_submit"
+                        android:layout_width="100dp"
+                        android:layout_height="@dimen/layout_height_default"
+                        style="@style/BlueButtonStyle"
+                        android:text="@string/confirm"
+                        android:onClick="onClick" />
+                </LinearLayout>
+            </LinearLayout>
+        </RelativeLayout>
+    </ScrollView>
+
+</LinearLayout>

@@ -1,0 +1,146 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <LinearLayout
+        android:id="@+id/ll_type"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="18sp"
+            android:text="@string/label_material_type" />
+
+        <Spinner
+            android:id="@+id/sp_type"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:gravity="center">
+
+
+        </Spinner>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_brand"
+        android:layout_below="@id/ll_type"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="18sp"
+            android:text="@string/label_material_category" />
+
+        <EditText
+            android:id="@+id/et_brand"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:singleLine="true"
+            android:hint="@string/hint_material_category_select"/>
+        <Button
+            android:id="@+id/bt_select_brand"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/select"
+            android:onClick="onClick"/>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_category"
+        android:layout_below="@id/ll_brand"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="18sp"
+            android:text="@string/label_commodity_category" />
+
+        <EditText
+            android:id="@+id/et_search_category"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/iv_search_category"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="26dp"
+            android:layout_marginRight="26dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/search_icon"
+            android:onClick="onClick"/>
+
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_name"
+        android:layout_below="@id/ll_category"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="90dp"
+            android:layout_height="wrap_content"
+            android:layout_marginStart="25dp"
+            android:layout_marginLeft="25dp"
+            android:layout_gravity="center_vertical"
+            android:textSize="18sp"
+            android:text="@string/label_material_name" />
+
+        <EditText
+            android:id="@+id/et_search_material"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:singleLine="true"
+            android:layout_weight="1" />
+
+        <ImageView
+            android:id="@+id/iv_search_material"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginEnd="26dp"
+            android:layout_marginRight="26dp"
+            android:layout_marginStart="5dp"
+            android:layout_marginLeft="5dp"
+            android:src="@drawable/search_icon"
+            android:onClick="onClick"/>
+
+    </LinearLayout>
+
+    <com.suning.cus.extras.pulltorefresh.PullToRefreshListView
+        android:id="@+id/lv_materials"
+        android:layout_below="@id/ll_name"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_marginTop="10dp">
+</com.suning.cus.extras.pulltorefresh.PullToRefreshListView>
+
+</RelativeLayout>

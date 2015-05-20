@@ -1,0 +1,91 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="10dp"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp"
+        android:paddingBottom="10dp"
+        android:background="@color/white">
+
+        <TextView
+            android:id="@+id/tv_material_name_label"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:text="@string/label_item_material_name"/>
+
+        <TextView
+            android:id="@+id/tv_material_name"
+            android:layout_alignTop="@id/tv_material_name_label"
+            android:layout_toRightOf="@id/tv_material_name_label"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+
+        <TextView
+            android:id="@+id/net_material_num_label"
+            android:layout_below="@id/tv_material_name"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/layout_height_space"
+            android:text="@string/label_item_material_number"/>
+
+        <com.suning.cus.extras.NumEditText
+            android:id="@+id/net_material_num"
+            android:layout_toRightOf="@id/net_material_num_label"
+            android:layout_alignTop="@id/net_material_num_label"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"/>
+
+
+        <TextView
+            android:id="@+id/sp_material_assurance_label"
+            android:layout_below="@id/net_material_num"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/layout_height_space"
+            android:text="@string/label_item_material_quality_assurance"/>
+
+        <Spinner
+            android:id="@+id/sp_material_assurance"
+            android:layout_toRightOf="@id/sp_material_assurance_label"
+            android:layout_alignTop="@id/sp_material_assurance_label"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingLeft="@dimen/layout_width_padding_default"
+            android:paddingRight="@dimen/layout_width_padding_default"
+            android:gravity="center"/>
+
+
+        <TextView
+            android:id="@+id/tv_material_price_label"
+            android:layout_below="@id/sp_material_assurance"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:layout_marginTop="@dimen/layout_height_space"
+            android:text="@string/label_item_material_price"/>
+
+        <TextView
+            android:id="@+id/tv_material_price"
+            android:layout_toRightOf="@id/tv_material_price_label"
+            android:layout_alignTop="@id/tv_material_price_label"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            />
+
+
+        <Button
+            android:id="@+id/bt_delete"
+            android:layout_width="50dp"
+            android:layout_height="wrap_content"
+            android:layout_alignParentRight="true"
+            android:layout_centerInParent="true"
+            android:background="@drawable/bt_fitting_back_del"
+            android:text="@string/delete"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_large"/>
+    </RelativeLayout>
+</LinearLayout>

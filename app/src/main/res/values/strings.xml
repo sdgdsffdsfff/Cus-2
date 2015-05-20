@@ -1,0 +1,135 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">苏宁帮客</string>
+
+
+    <string name="confirm">确认</string>
+    <string name="cancel">取消</string>
+    <string name="delete">删除</string>
+    <string name="important">重要</string>
+    <string name="select">选择</string>
+    <string name="search">查询</string>
+    <string name="remember_password">记住密码</string>
+    <string name="auto_login">自动登录</string>
+    <string name="check_update">检查更新</string>
+    <string name="dialog_loading">正在加载……</string>
+    <string name="dialog_submitting">正在提交……</string>
+    <string name="dialog_searching">正在查询……</string>
+    <string name="dialog_waiting">请等待……</string>
+    <string name="dialog_delete_alert">确定要删除吗？</string>
+    <string name="dialog_searching_price">正在查询价格……</string>
+
+    <string name="toast_error_network">网络有问题!</string>
+    <string name="toast_error_load_failed">加载失败……</string>
+    <string name="toast_error_json">Json数据解析错误！</string>
+    <string name="toast_error_date_required">日期不能为空！</string>
+    <string name="toast_error_date_no_selected">请选择日期！</string>
+    <string name="toast_field_required">请输入关键字！</string>
+    <string name="toast_no_more_data">没有更多数据了</string>
+    <string name="toast_beyond_date">查询天数不能超过7天！</string>
+    <string name="toast_error_date">起始日期不能大于终止日期！</string>
+    <string name="toast_cancel_success">取消成功！</string>
+    <string name="toast_beyond_store">超过最大库存数！</string>
+
+    <string name="action_settings">Settings</string>
+    <!--扫描框提示消息-->
+    <string name="scan_tips">对准扫描框即可自动扫描</string>
+
+    <!--activity labels/titles-->
+    <string name="title_task_summary">任务清单</string>
+    <string name="title_task_list">任务列表</string>
+    <string name="title_backup">备货</string>
+    <string name="title_manage">管理</string>
+    <string name="title_settings">设置</string>
+    <string name="title_task_detail">任务详情</string>
+    <string name="title_task_finish">销单完成</string>
+    <string name="title_task_history">任务查询</string>
+    <string name="title_task_cancel">取消任务</string>
+    <string name="title_task_tomorrow">销单次日</string>
+    <string name="title_task_other_day">销单另约</string>
+    <string name="title_task_maintain">故障选择</string>
+    <string name="title_material_apply">配件申请</string>
+    <string name="title_un_material_apply">非配件添加</string>
+    <string name="title_material_one_key_apply">一键申配</string>
+    <string name="title_appliance_type_apply">电器型号申配</string>
+    <string name="title_material_layer">品牌选择</string>
+    <string name="title_material_type_layer">品类选择</string>
+
+    <!-- MainActivity 下面的四个tab对应的文字 -->
+    <string name="tab_task">任务</string>
+    <string name="tab_backup">备货</string>
+    <string name="tab_manage">管理</string>
+    <string name="tab_settings">设置</string>
+
+    <!-- 任务列表界面 -->
+    <string name="task_search">任务查询</string>
+    <string name="task_list_summary_number">%1$s单</string>
+    <string name="task_list_tab_unprocessed">未处理(%1$s)</string>
+    <string name="task_list_tab_processed">已处理(%1$s)</string>
+
+    <!-- Task Item界面 -->
+    <string name="customer_telephone">固定电话：</string>
+    <string name="customer_cellphone">手机号码：</string>
+    <string name="task_item_order">服务订单：</string>
+    <string name="task_item_order_type">服务类型：</string>
+    <string name="task_item_address">顾客地址：</string>
+    <string name="task_item_goods">服务商品：</string>
+    <string name="task_item_goods_name">商品名称：</string>
+    <string name="task_item_priority">优先级别：</string>
+    <string name="task_item_appointment">预约时间：</string>
+    <string name="task_item_schedule">预约排程：</string>
+    <string name="task_item_destroy_status">订单状态：</string>
+    <string name="task_destroy_status_finish">服务完成</string>
+    <string name="task_destroy_status_unfinish">服务未完成</string>
+    <string name="task_destroy_status_tomorrow">服务次日</string>
+    <string name="task_destroy_status_other_day">服务另约</string>
+    <string name="task_destroy_status_cancel">服务取消</string>
+
+
+    <!-- 任务详情，销单界面 -->
+    <string name="time_choose_dialog_title">选择时间</string>
+    <string name="add_bespoke_time">点击添加预约</string>
+    <string name="task_complete_time">送货完成时间：</string>
+    <string name="task_previous_desc">上次派工信息：</string>
+    <string name="task_material_price">材配实收：</string>
+    <string name="task_service_price">服务实收：</string>
+    <string name="task_amount_price">总计实收：</string>
+    <string name="is_nc_medium">是否新冷媒：</string>
+    <string name="toast_bespoke_time_success">预约排程成功！</string>
+    <string name="cancel_reason">请选择服务取消原因</string>
+    <string name="search_waiting">正在查询……</string>
+    <string name="search_quality_assurance">正在查询质保信息……</string>
+    <string name="price">%1$s元</string>
+    <string name="remark">备注：</string>
+    <string name="remark_prompt">备注</string>
+
+
+    <!-- 任务完成相关-->
+    <string name="error_required_fault">故障或者维修措施不能为空！</string>
+    <string name="error_required_install_number">安装卡号不能为空！</string>
+    <string name="toast_material_field_required">请申请配件！</string>
+    <string name="toast_task_finish_success">销单成功！</string>
+
+    <!--配件材配相关-->
+    <string name="label_material_category">品类品牌：</string>
+    <string name="hint_material_category_select">请选择品类品牌</string>
+    <string name="label_commodity_category">商品类目：</string>
+    <string name="label_material_name">材配名称：</string>
+    <string name="label_material_type">物料类型：</string>
+    <string name="label_item_material_name">商&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;品：</string>
+    <string name="label_item_material_number">数&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;量：</string>
+    <string name="label_item_material_quality_assurance">质保标识：</string>
+    <string name="label_item_material_price">单&#160;&#160;&#160;&#160;&#160;&#160;&#160;&#160;价：</string>
+    <string name="material_total_price">%1$s元</string>
+    <string name="label_appliance_type_suning">电器型号：</string>
+    <string name="label_appliance_type_factory">厂家编码：</string>
+    <string name="error_required_appliance_type_suning">电器型号不能为空！</string>
+    <string name="error_required_appliance_type_factory">电器型号不能为空！</string>
+    <string name="error_required_category_name">商品目录不能为空！</string>
+    <string name="error_required_material_name">材配名称不能为空！！</string>
+
+    <string name="error_material_exists">配件已经申请过了！</string>
+    <string name="error_material_not_found">没有相关材配！</string>
+    <string name="error_category_not_found">没有相关类目！</string>
+</resources>

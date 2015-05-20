@@ -1,0 +1,48 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/lightgray">
+
+    <ListView
+        android:id="@+id/lv_shop_car_backup"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@+id/ll_shop_car_backup_ops" />
+
+    <LinearLayout
+        android:id="@+id/ll_shop_car_backup_ops"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:background="@android:color/transparent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true">
+
+        <Button
+            android:id="@+id/bt_shopcar_backup_ok"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/BlueButtonStyle"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:text="确定" />
+
+        <Button
+            android:id="@+id/bt_shopcar_backup_clear"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/WhiteButtonStyle"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:text="清空购物车" />
+
+    </LinearLayout>
+</RelativeLayout>

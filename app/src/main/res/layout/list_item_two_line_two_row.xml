@@ -1,0 +1,52 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:orientation="horizontal"
+              android:layout_width="match_parent"
+              android:layout_height="wrap_content"
+              android:minHeight="@dimen/layout_height_default">
+
+    <TextView
+        android:id="@+id/tv_text_1"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_marginStart="20dp"
+        android:layout_marginLeft="20dp"
+        android:layout_gravity="center_vertical"
+        android:gravity="center"
+        android:textSize="@dimen/text_size_large"/>
+
+
+    <RelativeLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1">
+
+        <TextView
+            android:id="@+id/tv_code_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="35dp"
+            android:layout_marginRight="35dp"
+            android:layout_marginTop="10dp"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_large"/>
+
+        <TextView
+            android:id="@+id/tv_code_2"
+            android:layout_below="@id/tv_code_1"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentEnd="true"
+            android:layout_alignParentRight="true"
+            android:layout_marginEnd="35dp"
+            android:layout_marginRight="35dp"
+            android:gravity="center"
+            android:textSize="@dimen/text_size_large"/>
+
+    </RelativeLayout>
+
+</LinearLayout>

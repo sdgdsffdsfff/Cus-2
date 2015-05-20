@@ -1,0 +1,54 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragment_back_color"
+    tools:context="com.suning.cus.activity.fragment.TaskSummaryFragment">
+
+    <RelativeLayout
+        android:orientation="vertical"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <LinearLayout
+            android:id="@+id/ll_w_manage"
+            android:background="@drawable/bg_listview_white"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="15dp"
+            android:orientation="horizontal" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_normal"
+                android:text="W库管理"
+                android:layout_margin="16dp"
+                android:layout_gravity="center_vertical"
+                android:drawableRight="@drawable/ic_global_arrow_right_2px" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/ll_order_manage"
+            android:background="@drawable/bg_listview_white"
+            android:layout_marginTop="10dp"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:layout_below="@+id/ll_w_manage" >
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_normal"
+                android:text="订单管理"
+                android:layout_margin="16dp"
+                android:layout_gravity="center_vertical"
+                android:drawableRight="@drawable/ic_global_arrow_right_2px" />
+
+        </LinearLayout>
+
+     </RelativeLayout>
+
+</FrameLayout>

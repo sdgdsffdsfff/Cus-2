@@ -1,0 +1,244 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+              android:paddingLeft="@dimen/layout_width_padding_default"
+              android:paddingTop="@dimen/layout_width_padding_default"
+              android:background="@color/white"
+              android:orientation="vertical"
+              android:layout_width="match_parent"
+              android:layout_height="match_parent">
+
+
+    <TableLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <TableRow android:layout_marginBottom="@dimen/layout_height_space">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="服务订单："
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_normal"/>
+
+            <TextView
+                android:id="@+id/tv_service_id"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_normal"
+                android:text="123123122"/>
+
+        </TableRow>
+
+        <TableRow android:layout_marginBottom="@dimen/layout_height_space">
+
+            <TextView
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="内机号："
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_normal"/>
+
+            <EditText
+                android:id="@+id/et_inner_machine_num"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="请扫描或手动输入内机号"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_normal"/>
+
+            <ImageView
+                android:id="@+id/iv_inner_machine_get"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_search"
+                android:onClick="onClick"/>
+
+
+        </TableRow>
+
+        <TableRow android:layout_marginBottom="@dimen/layout_height_space">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="外机号："
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_normal"/>
+
+            <EditText
+                android:id="@+id/et_outer_machine_num"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="请扫描或手动输入外机号"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_normal"/>
+
+            <ImageView
+                android:id="@+id/iv_outer_machine_get"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent"
+                android:layout_marginLeft="5dp"
+                android:scaleType="fitCenter"
+                android:src="@drawable/ic_search"
+                android:onClick="onClick"/>
+
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/tr_install_card"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_install_card_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="安装卡号："
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_normal"/>
+
+            <EditText
+                android:id="@+id/et_install_card"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:digits="1234567890abcdefghijklmnopqrstuvwxyz"
+                android:hint="请输入安装卡号"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_normal"/>
+
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tr_remark"
+            android:layout_marginBottom="@dimen/layout_height_space">
+
+            <TextView
+                android:id="@+id/tv_remark_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:gravity="center_vertical"
+                android:text="@string/remark"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_normal"/>
+
+            <EditText
+                android:id="@+id/et_remark"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:hint="@string/remark_prompt"
+                android:singleLine="true"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_normal"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tr_install_prompt"
+            android:layout_marginBottom="@dimen/layout_height_space"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/tv_install_mode_label"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="安装方式："
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_normal"/>
+
+            <Spinner
+                android:id="@+id/sp_install_mode"
+                android:layout_width="170dip"
+                android:layout_height="wrap_content"
+                android:textColor="#37302a"
+                android:textSize="@dimen/text_size_small"/>
+        </TableRow>
+
+        <TableRow
+            android:id="@+id/tr_fault_prompt"
+            android:layout_marginBottom="@dimen/layout_height_space"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/fault_prompt"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="故障："
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_normal"/>
+
+            <TextView
+                android:id="@+id/tv_fault_prompt_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="点击此处添加"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_normal"
+                android:clickable="true"
+                android:onClick="onClick"/>
+
+        </TableRow>
+
+
+        <TableRow
+            android:id="@+id/tr_fix_measure"
+            android:layout_marginBottom="@dimen/layout_height_space"
+            android:visibility="gone">
+
+            <TextView
+                android:id="@+id/fix_measure"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="维修措施："
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_normal"/>
+
+            <TextView
+                android:id="@+id/tv_fix_measure_content"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:hint="点击此处添加"
+                android:textColor="@color/black"
+                android:textSize="@dimen/text_size_normal"
+                android:clickable="true"
+                android:onClick="onClick"/>
+        </TableRow>
+    </TableLayout>
+
+
+    <LinearLayout
+        android:id="@+id/ll_add_material"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:orientation="horizontal">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:text="材配信息："
+            android:textColor="@color/black"
+            android:textSize="@dimen/text_size_normal"/>
+
+        <Button
+            android:id="@+id/btn_add_material"
+            android:layout_width="wrap_content"
+            android:layout_height="@dimen/layout_height_default"
+            android:gravity="center"
+            android:paddingBottom="5dp"
+            android:paddingTop="5dp"
+            android:text="材配添加"
+            android:textColor="#37302a"
+            android:textSize="@dimen/text_size_normal"
+            android:onClick="onClick"/>
+    </LinearLayout>
+
+</LinearLayout>

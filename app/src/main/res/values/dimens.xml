@@ -1,0 +1,40 @@
+<resources>
+    <!-- Default screen margins, per the Android Design guidelines. -->
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <!--控件默认高度和宽度-->
+    <dimen name="layout_width_default">48dp</dimen>
+    <dimen name="layout_height_default">48dp</dimen>
+    <!--每个控件之间建议的间隔-->
+    <dimen name="layout_height_space">8dp</dimen>
+    <dimen name="layout_width_padding_default">16dp</dimen>
+
+    <!--文字大小-->
+    <dimen name="text_size_small">14sp</dimen>
+    <!-- 较小的文字大小-->
+    <dimen name="text_size_normal">16sp</dimen>
+    <!-- 默认文字大小-->
+    <dimen name="text_size_large">18sp</dimen>
+    <!-- 默认button字体大小 -->
+    <dimen name="text_size_xlarge">20sp</dimen>
+
+    <!--登陆界面  14110105-->
+    <dimen name="bt_radius_login">5dp</dimen>
+
+
+    <!-- 15010551 -->
+
+
+    <dimen name="order_manage_gl_padding_top">10dp</dimen>
+    <dimen name="order_manage_gl_padding_left">25dp</dimen>
+    <dimen name="order_manage_gl_padding_right">49dp</dimen>
+    <dimen name="order_manage_gl_padding_bottom">20dp</dimen>
+
+    <!--订单管理 查询按钮圆角-->
+    <dimen name="bt_radius_order_manage">10dp</dimen>
+
+    <!--配件归还 确认和取消按钮圆角-->
+    <dimen name="bt_radius_fitting_back">10dp</dimen>
+
+</resources>

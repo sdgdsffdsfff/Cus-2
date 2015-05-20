@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="prompt_type">配件申请</string>
+    <string name="prompt_date_picker">最近一周</string>
+
+    <string name="fitting_back">配件归还</string>
+    <string name="fitting_buy">配件购买</string>
+
+    <string name="data_error">数据错误</string>
+    <string name="title_access_return">配件归还</string>
+    <string name="title_new_access_return">新件归还</string>
+    <string name="loading_access_return">提交归还订单，请稍候...</string>
+    <string name="loading_submit_order">提交订单，请稍候...</string>
+    <string name="have_no_access">没有配件</string>
+
+    <string name="title_order_manage">材配订单管理</string>
+    <string name="title_order_active">订单占用查询</string>
+
+    <string name="loading_query_order">查询订单 请稍候...</string>
+    <string name="date_order_error">起始日期不能大于终止日期</string>
+    <string name="date_range_error">日期范围出错</string>
+    <string name="loading_order_active">订单占用查询,请稍候...</string>
+    <string name="query_order_error">查询不到相关订单！</string>
+    <string name="query_order_detail_error">查询不到订单详情</string>
+    <string name="title_access_order_detail">材配订单详情</string>
+    <string name="loading_query_order_detail">获取订单详情，请稍候...</string>
+    <string name="title_w_manage">W库管理</string>
+    <string name="select_one_item_notice">请至少选择一个项目才能创建订单</string>
+    <string name="loading_query_w_info">获取W库信息，请稍候...</string>
+    <string name="query_w_empty">查询结果为空</string>
+    <string name="access_ops_apply">配件操作申请</string>
+
+    <string name="order_num">订单编号</string>
+    <string name="service_order_num">服务订单号</string>
+</resources>

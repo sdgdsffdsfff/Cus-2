@@ -1,0 +1,91 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:gravity="center_horizontal"
+    android:orientation="vertical"
+    android:background="@color/cl_bg_login"
+    tools:context="com.suning.cus.activity.LoginActivity">
+
+
+    <ImageView
+        android:id="@+id/iv_login_bg"
+        android:layout_width="match_parent"
+        android:layout_height="288dp"
+        android:src="@drawable/bg_login"
+        />
+
+
+    <RelativeLayout
+        android:id="@+id/rl_login_form"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <com.suning.cus.extras.ClearEditText
+            android:id="@+id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:drawableLeft="@drawable/ic_login_account"
+            android:drawablePadding="10dp"
+            android:singleLine="true"
+            android:hint="@string/login_name_hint"/>
+
+        <com.suning.cus.extras.ClearEditText
+            android:id="@+id/et_password"
+            android:layout_below="@id/et_name"
+            android:layout_width="match_parent"
+            android:layout_height="44dp"
+            android:layout_marginTop="5dp"
+            android:layout_marginLeft="@dimen/activity_horizontal_margin"
+            android:layout_marginRight="@dimen/activity_horizontal_margin"
+            android:drawableLeft="@drawable/ic_login_pwd"
+            android:drawablePadding="10dp"
+            android:singleLine="true"
+            android:password="true"
+            android:hint="@string/login_password_hint"/>
+
+        <CheckBox
+            android:id="@+id/cb_remember_password"
+            android:layout_below="@id/et_password"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:onClick="onCheck"
+            android:text="@string/remember_password" />
+
+        <CheckBox
+            android:id="@+id/cb_auto_login"
+            android:layout_below="@id/et_password"
+            android:layout_alignParentRight="true"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="@dimen/activity_vertical_margin"
+            android:layout_marginLeft="30dp"
+            android:layout_marginRight="30dp"
+            android:onClick="onCheck"
+            android:text="@string/auto_login"
+            android:visibility="gone"/>
+
+
+    </RelativeLayout>
+
+    <Button
+        android:id="@+id/bt_login"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="25dp"
+        android:layout_marginLeft="@dimen/activity_horizontal_margin"
+        android:layout_marginRight="@dimen/activity_horizontal_margin"
+        style="@style/BlueButtonStyle"
+        android:text="@string/action_sign_in"
+        android:onClick="attemptLogin"/>
+
+</LinearLayout>
+
+
+

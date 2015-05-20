@@ -1,0 +1,126 @@
+<?xml version="1.0" encoding="utf-8"?>
+<android.support.v7.widget.CardView
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:card_view="http://schemas.android.com/apk/res-auto"
+    android:id="@+id/cv_layout"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    card_view:cardCornerRadius="10dp"
+    card_view:cardPreventCornerOverlap="true"
+    card_view:cardUseCompatPadding="true"
+    card_view:contentPaddingTop="10dp"
+    card_view:contentPaddingBottom="10dp"
+    card_view:contentPaddingLeft="@dimen/layout_width_padding_default"
+    card_view:contentPaddingRight="@dimen/layout_width_padding_default">
+
+    <RelativeLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+
+        <TextView
+            android:id="@+id/tv_task_item_order_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:textSize="@dimen/text_size_normal"
+            android:text="@string/task_item_order"/>
+
+        <TextView
+            android:id="@+id/tv_task_item_order"
+            android:layout_alignTop="@id/tv_task_item_order_label"
+            android:layout_toRightOf="@id/tv_task_item_order_label"
+            android:layout_toEndOf="@id/tv_task_item_order_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:textSize="@dimen/text_size_normal"/>
+
+        <TextView
+            android:id="@+id/tv_task_item_address_label"
+            android:layout_below="@id/tv_task_item_order"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:textSize="@dimen/text_size_normal"
+            android:text="@string/task_item_address"/>
+
+        <TextView
+            android:id="@+id/tv_task_item_address"
+            android:layout_toRightOf="@id/tv_task_item_address_label"
+            android:layout_alignTop="@id/tv_task_item_address_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:textSize="@dimen/text_size_normal"/>
+
+        <TextView
+            android:id="@+id/tv_task_item_goods_label"
+            android:layout_below="@id/tv_task_item_address"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:textSize="@dimen/text_size_normal"
+            android:text="@string/task_item_goods"/>
+
+
+        <TextView
+            android:id="@+id/tv_task_item_goods"
+            android:layout_toRightOf="@id/tv_task_item_goods_label"
+            android:layout_alignTop="@id/tv_task_item_goods_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:textSize="@dimen/text_size_normal"/>
+
+
+        <TextView
+            android:id="@+id/tv_task_item_time_label"
+            android:layout_below="@id/tv_task_item_goods"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:textSize="@dimen/text_size_normal"
+            android:text="@string/task_item_appointment"/>
+
+
+        <TextView
+            android:id="@+id/tv_task_item_time"
+            android:layout_toRightOf="@id/tv_task_item_time_label"
+            android:layout_alignTop="@id/tv_task_item_time_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="3dp"
+            android:textSize="@dimen/text_size_normal"/>
+
+        <TextView
+            android:id="@+id/tv_task_item_schedule_label"
+            android:layout_below="@id/tv_task_item_time"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_normal"
+            android:text="@string/task_item_schedule"/>
+
+        <TextView
+            android:id="@+id/tv_task_item_schedule"
+            android:layout_toRightOf="@id/tv_task_item_schedule_label"
+            android:layout_alignTop="@id/tv_task_item_schedule_label"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_normal"/>
+
+        <TextView
+            android:id="@+id/tv_important"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_alignParentTop="true"
+            android:layout_alignParentRight="true"
+            android:gravity="center"
+            android:background="@drawable/bg_circle"
+            android:textColor="@color/white"
+            android:textSize="@dimen/text_size_small"
+            android:text="@string/important"
+            android:visibility="gone"/>
+
+    </RelativeLayout>
+</android.support.v7.widget.CardView>

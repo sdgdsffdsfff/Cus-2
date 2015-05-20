@@ -1,0 +1,99 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.suning.cus.activity.MessageDetailActivity"
+    android:background="@color/ghostwhite" >
+
+    <LinearLayout
+        android:orientation="horizontal" android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:padding="10dp"
+        android:background="@drawable/xu_kuang"
+        android:clickable="true"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentStart="true"
+        android:id="@+id/ll_message_summary" >
+
+        <TextView
+            android:id="@+id/tv_notice_time"
+            android:layout_width="wrap_content"
+            android:layout_height="fill_parent"
+            android:gravity="center"
+            android:paddingRight="10dp"
+            android:textSize="@dimen/text_size_normal"
+            android:text="2014-03-14" />
+
+        <TextView
+            android:id="@+id/tv_notice_title"
+            android:layout_width="0dp"
+            android:layout_height="fill_parent"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:paddingLeft="10dp"
+            android:paddingRight="10dp"
+            android:textSize="@dimen/text_size_large"
+            android:text="集团2014第一季度新进高层集训启动" />
+
+    </LinearLayout>
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:id="@+id/scrollView"
+        android:padding="10dp"
+        android:layout_below="@+id/ll_message_summary"
+        android:layout_above="@+id/ll_message_detail_ops">
+
+        <TextView
+            android:id="@+id/tv_message_detail"
+            android:layout_width="fill_parent"
+            android:layout_height="fill_parent"
+            android:background="@android:color/transparent"
+            android:textSize="@dimen/text_size_normal"
+            android:text="3月8日至9日，组织部联合苏宁大学，完成了管理培训生入职前第一次集训。
+
+    为了配合云商模式转型，加快人才培养，储备未来中高层管理人才，集团启动了“管理培训生”计划，其中第一年的见习期包括了入职前培训、入职后培训、终端轮岗、部门实习。在入职前培训中，将通过在校学习、月度回总部集训汇报的方式，围绕行业知识、企业文化、基础技能、职业素养四大模块开展。
+
+    本次集训共有25名管培生参训。集训方式也是以行动学习、自主学习为导向，结合集团经营、后期工作，激发管培生学习兴趣与创新意识。除了企业文化、通用技能实操、高管沟通等课程，重点设置了读书调研报告研讨会、 “苏宁品牌美誉度调研”任务汇报、苏宁俱乐部组建研讨等任务，同时邀请到品牌部、市场、人力资源等关联业务体系的负责人，担任专业评委。
+
+    此外，本次集训邀请到了苏宁云商副董事长孙为民、高级副总裁孟祥胜与管培生进行了近距离沟通。在沟通中，集团领导寄望管培生，一方面要明确目标、承担责任，早日进入工作状态；另一方面，从集团发展历程与文化、工作的思维方法等角度，勉励管培生要用正确的心态、方法去开展工作。
+
+    集训仅仅是一个开始，训后管培生将充分利用在校期间的宝贵时间，通过在校学习和任务，加大综合素质能力储备，更重要的是结合实际任务找到“工作状态”。管培生项目的启动也是对1200培养管理方式变革的一次助推，以提升集团新十年人才梯队质量。希望所有1200员工，从现在开始建立正确的意识和工作方式，“快鸟先飞”，加强自身能力素质的提升，并在工作中去不断学习，尽快承担工作责任，助推集团战略转型落地！
+"/>
+
+    </ScrollView>
+
+    <LinearLayout
+        android:id="@+id/ll_message_detail_ops"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:background="@drawable/xu_kuang"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            style="@style/RedButtonStyle"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:text="删除"
+            android:onClick="deleteMessage" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            style="@style/WhiteButtonStyle"
+            android:text="返回"
+            android:onClick="goBack" />
+
+    </LinearLayout>
+
+</RelativeLayout>

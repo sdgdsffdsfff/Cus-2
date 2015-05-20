@@ -1,0 +1,49 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.suning.cus.activity.FittingBackActivity"
+    android:background="@color/lightgray" >
+
+    <ListView
+        android:id="@+id/lv_fitting_buy"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:background="@color/white"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@+id/ll_fitting_buy_ops"/>
+
+    <LinearLayout
+        android:id="@+id/ll_fitting_buy_ops"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:paddingTop="30dp"
+        android:paddingBottom="30dp"
+        android:background="@android:color/transparent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentLeft="true" >
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_size_large"
+            android:textColor="@color/white"
+            android:background="@drawable/bt_fitting_back_ok"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:text="确定" />
+
+        <Button
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:textSize="@dimen/text_size_large"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bt_fitting_back_cancel"
+            android:text="取消" />
+
+    </LinearLayout>
+</RelativeLayout>

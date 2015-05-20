@@ -1,0 +1,147 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical">
+
+    <FrameLayout
+        android:id="@+id/id_content"
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:layout_weight="1" >
+    </FrameLayout>
+
+    <RelativeLayout
+        android:id="@+id/rl_main_tab_bottom"
+        android:layout_width="fill_parent"
+        android:layout_height="65dp">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="65dp" >
+
+            <LinearLayout
+                android:id="@+id/ll_tab_bottom_task"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:descendantFocusability="beforeDescendants"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:onClick="onClick">
+
+                <ImageButton
+                    android:id="@+id/btn_tab_bottom_task"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="#0000"
+                    android:clickable="false"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_tab_task_press"
+                     />
+
+                <TextView
+                    android:id="@+id/tv_tab_bottom_task"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/tab_task"
+                    android:textColor="@color/cl_text_press" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_tab_bottom_backup"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:descendantFocusability="beforeDescendants"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:onClick="onClick">
+
+                <ImageButton
+                    android:id="@+id/btn_tab_bottom_backup"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="#0000"
+                    android:clickable="false"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_tab_backup_nor"
+                     />
+
+                <TextView
+                    android:id="@+id/tv_tab_bottom_backup"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/tab_backup"
+                    android:textColor="@color/gray" />
+
+            </LinearLayout>
+
+
+            <LinearLayout
+                android:id="@+id/ll_tab_bottom_manager"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:descendantFocusability="beforeDescendants"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:onClick="onClick">
+
+                <ImageButton
+                    android:id="@+id/btn_tab_bottom_manager"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="#0000"
+                    android:clickable="false"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_tab_manage_nor"/>
+
+                <TextView
+                    android:id="@+id/tv_tab_bottom_manager"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/tab_manage"
+                    android:textColor="@color/gray" />
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:id="@+id/ll_tab_bottom_settings"
+                android:layout_width="0dp"
+                android:layout_height="fill_parent"
+                android:layout_weight="1"
+                android:descendantFocusability="beforeDescendants"
+                android:gravity="center"
+                android:orientation="vertical"
+                android:onClick="onClick">
+
+                <ImageButton
+                    android:id="@+id/btn_tab_bottom_settings"
+                    android:layout_width="24dp"
+                    android:layout_height="24dp"
+                    android:background="#0000"
+                    android:clickable="false"
+                    android:scaleType="fitXY"
+                    android:src="@drawable/ic_tab_account_nor"/>
+
+                <TextView
+                    android:id="@+id/tv_tab_bottom_settings"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="5dp"
+                    android:text="@string/tab_settings"
+                    android:textColor="@color/gray" />
+
+            </LinearLayout>
+
+
+        </LinearLayout>
+
+    </RelativeLayout>
+
+</LinearLayout>

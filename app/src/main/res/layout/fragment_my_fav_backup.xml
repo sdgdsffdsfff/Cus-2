@@ -1,0 +1,46 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context="com.suning.cus.activity.fragment.MyFavBackupFragment">
+
+    <com.suning.cus.extras.pulltorefresh.PullToRefreshListView
+        android:id="@+id/lv_my_fav_backup"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_above="@+id/ll_my_fav_ops" />
+
+    <LinearLayout
+        android:id="@+id/ll_my_fav_ops"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/ghostwhite"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:layout_alignParentBottom="true" >
+
+        <Button
+            android:id="@+id/bt_my_fav_sel_all"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="10dp"
+            android:background="@drawable/bt_fitting_back_cancel"
+            android:textSize="@dimen/text_size_large"
+            android:text="全选" />
+
+        <Button
+            android:id="@+id/bt_my_fav_del"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:layout_marginLeft="10dp"
+            android:layout_marginRight="20dp"
+            android:background="@drawable/bt_fitting_back_del"
+            android:textSize="@dimen/text_size_large"
+            android:textColor="@color/white"
+            android:text="删除"/>
+
+    </LinearLayout>
+
+</RelativeLayout>

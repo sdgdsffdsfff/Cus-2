@@ -1,0 +1,51 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context="com.suning.cus.activity.QueryAccessOrderDetailsActivity">
+
+    <ListView
+        android:id="@+id/lv_access_order_details"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_above="@+id/ll_query_access_order_account">
+
+    </ListView>
+
+    <LinearLayout
+        android:id="@+id/ll_query_access_order_account"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@drawable/xu_kuang"
+        android:paddingTop="20dp"
+        android:paddingBottom="20dp"
+        android:gravity="center"
+        android:paddingLeft="20dp"
+        android:paddingRight="20dp" >
+
+        <TextView android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:textSize="@dimen/text_size_large"
+            android:text="商品总额: " />
+
+        <TextView
+            android:id="@+id/tv_order_total_payment"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_large"
+            android:textColor="@color/red"
+            android:text="0" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_large"
+            android:textColor="@color/red"
+            android:text="元" />
+
+    </LinearLayout>
+
+</RelativeLayout>

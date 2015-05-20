@@ -1,0 +1,36 @@
+<resources>
+
+    <!-- Base application theme. -->
+    <style name="AppTheme" parent="Theme.AppCompat.Light.NoActionBar">
+        <!-- Customize your theme here. -->
+    </style>
+
+    <style name="RedButtonStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+        <item name="android:background">@drawable/bg_button_red</item>
+    </style>
+
+    <style name="BlueButtonStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+        <item name="android:background">@drawable/bg_button_blue</item>
+    </style>
+
+    <style name="WhiteButtonStyle">
+        <item name="android:textColor">@color/black</item>
+        <item name="android:textSize">@dimen/text_size_large</item>
+        <item name="android:background">@drawable/bg_button_white</item>
+    </style>
+
+    <style name="ActionBarButtonStyle">
+        <item name="android:textColor">@color/white</item>
+        <item name="android:textSize">@dimen/text_size_small</item>
+        <item name="android:background">@drawable/bg_actionbar_button</item>
+    </style>
+
+    <style name="ActionBarBackStyle">
+        <item name="android:background">@drawable/bg_actionbar_back</item>
+    </style>
+
+</resources>

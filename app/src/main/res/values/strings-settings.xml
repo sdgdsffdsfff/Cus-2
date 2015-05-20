@@ -1,0 +1,26 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="title_message_detail">通知详情</string>
+    <string name="title_modify_pwd">修改密码</string>
+    <string name="title_modify_init_pwd">修改初始密码</string>
+
+    <string name="sure_to_exit">确认退出?</string>
+
+    <string name="loading_logout">正在登出，请稍候...</string>
+    <string name="logout_success">注销成功</string>
+    <string name="loading_modify_pwd">修改密码，请稍候...</string>
+    <string name="modify_pwd_success">修改密码成功</string>
+
+    <string name="title_notice">通知</string>
+    <string name="loading_notice_list">获取通知列表，请稍候...</string>
+    <string name="loading_del_notice">删除通知，请稍候...</string>
+    <string name="del_success">删除成功</string>
+    <string name="no_more_notice">暂无消息</string>
+
+    <string name="input_old_pwd_alert">请输入旧密码</string>
+    <string name="input_new_pwd_alert">请输入新密码</string>
+    <string name="pwd_less_than_six">密码不能少于6位</string>
+    <string name="pwd_not_match">两次输入的密码不一致</string>
+
+    <string name="dialog_sure_to_back">确认返回 ?</string>
+</resources>

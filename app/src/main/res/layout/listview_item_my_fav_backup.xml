@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white"
+    android:paddingTop="10dp"
+    android:paddingBottom="10dp"
+    android:paddingLeft="20dp"
+    android:paddingRight="20dp"
+    android:id="@+id/ll_backup_my_fav_item" >
+
+
+    <TextView
+        android:id="@+id/tv_backup_cmmdty_name"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:text="123456789abcdefghijklmn"
+        android:textSize="@dimen/text_size_small" />
+
+
+    <TextView
+        android:id="@+id/tv_backup_cmmdty_code"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="1"
+        android:layout_gravity="center"
+        android:layout_marginLeft="8dp"
+        android:gravity="left|center_vertical"
+        android:paddingLeft="10dp"
+        android:textSize="@dimen/text_size_small"
+        android:text="200000009112345555dffddf" />
+
+        <ImageView
+            android:id="@+id/iv_backup_add_shopcar"
+            android:layout_width="50dp"
+            android:layout_height="50dp"
+            android:gravity="center"
+            android:padding="12dp"
+            android:src="@drawable/ic_tab_backup_nor"
+            android:background="@drawable/bg_button_gray"
+            android:layout_alignParentRight="true"
+            android:layout_centerVertical="true"
+            android:clickable="true" />
+
+</LinearLayout>

@@ -1,0 +1,94 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/ll_item_child"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="14dp"
+    android:paddingBottom="14dp"
+    android:paddingLeft="34dp"
+    android:background="@drawable/bg_listview_white"
+    android:clickable="true" >
+
+    <!--CheckBox
+        android:id="@+id/cb_supplier"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.42"
+        android:textSize="@dimen/text_size_default"
+        android:text="供应商xx"/-->
+
+    <TextView
+        android:id="@+id/tv_supplier"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.42"
+        android:text="供应商xx"
+        android:textSize="@dimen/text_size_small"/>
+
+    <TextView
+        android:id="@+id/tv_material_code"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.26"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="@dimen/text_size_small"
+        android:text="200091" />
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.18"
+        android:gravity="center"
+        android:layout_gravity="center" >
+
+        <TextView
+            android:id="@+id/tv_allow_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="@dimen/text_size_small"
+            android:text="22" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="@dimen/text_size_small"
+            android:text="/" />
+
+        <TextView
+            android:id="@+id/tv_occupy_count"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center"
+            android:textSize="@dimen/text_size_small"
+            android:text="8" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_weight="0.13"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:visibility="gone" >
+
+        <TextView
+            android:id="@+id/tv_material_age"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_normal"
+            android:text="22" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:textSize="@dimen/text_size_normal"
+            android:text="天" />
+
+    </LinearLayout>
+
+
+</LinearLayout>

@@ -1,0 +1,590 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent">
+
+    <ScrollView
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:background="@color/cl_bg_gray">
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+            <!--第一块-->
+            <RelativeLayout
+                android:id="@+id/rl_1"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:paddingLeft="@dimen/layout_width_padding_default"
+                android:paddingRight="@dimen/layout_width_padding_default"
+                android:background="@drawable/bg_task_detail">
+
+                <TextView
+                    android:id="@+id/tv_client_name_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_large"
+                    android:text="用户姓名：" />
+
+                <TextView
+                    android:id="@+id/tv_client_name"
+                    android:layout_toRightOf="@id/tv_client_name_label"
+                    android:layout_alignBottom="@id/tv_client_name_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_large" />
+
+
+                <TextView
+                    android:id="@+id/tv_client_tele_label"
+                    android:layout_below="@+id/tv_client_name_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_large"
+                    android:text="@string/customer_telephone" />
+
+                <TextView
+                    android:id="@+id/tv_client_tele"
+                    android:layout_toEndOf="@id/tv_client_tele_label"
+                    android:layout_toRightOf="@id/tv_client_tele_label"
+                    android:layout_alignBottom="@id/tv_client_tele_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_large" />
+
+                <ImageButton
+                    android:id="@+id/ib_client_tele"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentEnd="true"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignBottom="@id/tv_client_tele"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/ic_tel"
+                    android:background="@color/transparent"
+                    android:scaleType="fitXY" />
+
+
+                <TextView
+                    android:id="@+id/tv_client_phone_label"
+                    android:layout_below="@+id/tv_client_tele_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_large"
+                    android:text="@string/customer_cellphone" />
+
+                <TextView
+                    android:id="@+id/tv_client_phone"
+                    android:layout_toRightOf="@id/tv_client_phone_label"
+                    android:layout_toEndOf="@id/tv_client_phone_label"
+                    android:layout_alignBottom="@id/tv_client_phone_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_large" />
+
+
+                <ImageButton
+                    android:id="@+id/ib_client_phone"
+                    android:layout_width="20dp"
+                    android:layout_height="20dp"
+                    android:layout_alignParentRight="true"
+                    android:layout_alignBottom="@id/tv_client_phone_label"
+                    android:layout_marginEnd="20dp"
+                    android:layout_marginRight="20dp"
+                    android:src="@drawable/ic_tel"
+                    android:background="@color/transparent"
+                    android:scaleType="fitXY" />
+
+                <TextView
+                    android:id="@+id/tv_client_address_label"
+                    android:layout_below="@+id/tv_client_phone_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_large"
+                    android:text="@string/task_item_address" />
+
+                <TextView
+                    android:id="@+id/tv_client_address"
+                    android:layout_toRightOf="@id/tv_client_address_label"
+                    android:layout_alignTop="@id/tv_client_address_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_large" />
+
+                <!--优先级别-->
+                <TextView
+                    android:id="@+id/tv_order_priority_label"
+                    android:layout_below="@+id/tv_client_address"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:drawableStart="@drawable/ic_priority"
+                    android:drawableLeft="@drawable/ic_priority"
+                    android:textColor="#b38100"
+                    android:textSize="@dimen/text_size_normal"
+                    android:text="@string/task_item_priority"
+                    android:visibility="gone"/>
+
+                <TextView
+                    android:id="@+id/tv_order_priority"
+                    android:layout_toEndOf="@id/tv_order_priority_label"
+                    android:layout_toRightOf="@id/tv_order_priority_label"
+                    android:layout_alignTop="@id/tv_order_priority_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#b38100"
+                    android:textSize="@dimen/text_size_normal"
+                    android:visibility="gone"/>
+
+            </RelativeLayout>
+
+
+            <!--第二块-->
+            <RelativeLayout
+                android:id="@+id/rl_2"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="@dimen/layout_width_padding_default"
+                android:paddingRight="@dimen/layout_width_padding_default"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/bg_task_detail">
+
+
+                <TextView
+                    android:id="@+id/tv_service_id_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_large"
+                    android:text="@string/task_item_order" />
+
+                <TextView
+                    android:id="@+id/tv_service_id"
+                    android:layout_toRightOf="@id/tv_service_id_label"
+                    android:layout_alignTop="@id/tv_service_id_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_large" />
+
+
+                <TextView
+                    android:id="@+id/tv_product_desc_label"
+                    android:layout_below="@+id/tv_service_id_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_large"
+                    android:text="@string/task_item_goods_name" />
+
+                <TextView
+                    android:id="@+id/tv_product_desc"
+                    android:layout_toRightOf="@id/tv_product_desc_label"
+                    android:layout_alignTop="@id/tv_product_desc_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_large" />
+
+
+                <TextView
+                    android:id="@+id/tv_service_product_label"
+                    android:layout_below="@+id/tv_product_desc"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:singleLine="true"
+                    android:textSize="@dimen/text_size_large"
+                    android:text="@string/task_item_goods" />
+
+                <TextView
+                    android:id="@+id/tv_service_product"
+                    android:layout_toRightOf="@id/tv_service_product_label"
+                    android:layout_alignTop="@id/tv_service_product_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:singleLine="true"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_large" />
+
+
+                <TextView
+                    android:id="@+id/tv_service_order_type_label"
+                    android:layout_below="@+id/tv_service_product"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_large"
+                    android:text="@string/task_item_order_type" />
+
+
+                <TextView
+                    android:id="@+id/tv_service_order_type"
+                    android:layout_toRightOf="@id/tv_service_order_type_label"
+                    android:layout_alignTop="@id/tv_service_order_type_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/tv_send_time_label"
+                    android:layout_below="@+id/tv_service_order_type_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_large"
+                    android:text="送货日期：" />
+
+
+                <TextView
+                    android:id="@+id/tv_send_time"
+                    android:layout_toRightOf="@+id/tv_send_time_label"
+                    android:layout_alignBottom="@+id/tv_send_time_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/tv_book_time_label"
+                    android:layout_below="@+id/tv_send_time_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_large"
+                    android:text="@string/task_item_appointment" />
+
+
+                <TextView
+                    android:id="@+id/tv_book_time"
+                    android:layout_toRightOf="@+id/tv_book_time_label"
+                    android:layout_alignBottom="@+id/tv_book_time_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_large" />
+
+
+                <!--预约排程-->
+                <TextView
+                    android:id="@+id/tv_bespoke_time_label"
+                    android:layout_below="@+id/tv_book_time_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_large"
+                    android:text="@string/task_item_schedule" />
+
+                <TextView
+                    android:id="@+id/tv_bespoke_time"
+                    android:layout_toEndOf="@+id/tv_bespoke_time_label"
+                    android:layout_toRightOf="@+id/tv_bespoke_time_label"
+                    android:layout_alignBottom="@+id/tv_bespoke_time_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center_vertical"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_large"
+                    android:hint="@string/add_bespoke_time"
+                    android:clickable="true"
+                    android:onClick="onClick"/>
+
+
+            </RelativeLayout>
+
+            <!--第三块-->
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="@dimen/layout_width_padding_default"
+                android:paddingRight="@dimen/layout_width_padding_default"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/bg_task_detail">
+
+                <!--备注-->
+                <TextView
+                    android:id="@+id/tv_remark_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_large"
+                    android:text="@string/remark" />
+
+
+                <TextView
+                    android:id="@+id/tv_remark"
+                    android:layout_toRightOf="@+id/tv_remark_label"
+                    android:layout_alignTop="@+id/tv_remark_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_large" />
+
+                <!--送货完成时间-->
+                <TextView
+                    android:id="@+id/tv_complete_time_label"
+                    android:layout_below="@id/tv_remark"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:drawableLeft="@drawable/ic_send_complete"
+                    android:gravity="center"
+                    android:textColor="#b38100"
+                    android:textSize="@dimen/text_size_normal"
+                    android:text="@string/task_complete_time"
+                    android:visibility="gone"/>
+
+
+                <TextView
+                    android:id="@+id/tv_complete_time"
+                    android:layout_toRightOf="@+id/tv_complete_time_label"
+                    android:layout_alignTop="@+id/tv_complete_time_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:gravity="center"
+                    android:textColor="#b38100"
+                    android:textSize="@dimen/text_size_normal"
+                    android:visibility="gone"/>
+
+                <!--是否新冷媒-->
+                <TextView
+                    android:id="@+id/tv_is_nc_medium_label"
+                    android:layout_below="@id/tv_complete_time_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_large"
+                    android:text="@string/is_nc_medium" />
+
+
+                <TextView
+                    android:id="@+id/tv_is_nc_medium"
+                    android:layout_toRightOf="@+id/tv_is_nc_medium_label"
+                    android:layout_alignTop="@+id/tv_is_nc_medium_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_large" />
+
+
+                <!--质保标识-->
+                <TextView
+                    android:id="@+id/tv_quality_assurance_label"
+                    android:layout_below="@id/tv_is_nc_medium_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_large"
+                    android:text="@string/label_item_material_quality_assurance" />
+
+
+                <TextView
+                    android:id="@+id/tv_quality_assurance"
+                    android:layout_toRightOf="@+id/tv_quality_assurance_label"
+                    android:layout_alignTop="@+id/tv_quality_assurance_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_large" />
+
+
+                <!--上次派工信息-->
+                <TextView
+                    android:id="@+id/tv_previous_desc_label"
+                    android:layout_below="@id/tv_quality_assurance_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_large"
+                    android:text="@string/task_previous_desc" />
+
+
+                <TextView
+                    android:id="@+id/tv_previous_desc"
+                    android:layout_toRightOf="@+id/tv_previous_desc_label"
+                    android:layout_alignTop="@+id/tv_previous_desc_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_large" />
+
+
+                <!--故障描述-->
+                <TextView
+                    android:id="@+id/tv_desc_label"
+                    android:layout_below="@id/tv_previous_desc_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_large"
+                    android:text="故障描述：" />
+
+
+                <TextView
+                    android:id="@+id/tv_desc"
+                    android:layout_toRightOf="@+id/tv_desc_label"
+                    android:layout_alignTop="@+id/tv_desc_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_large" />
+
+
+
+            </RelativeLayout>
+
+
+            <!--第四块-->
+            <RelativeLayout
+                android:id="@+id/rl_price"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginTop="10dp"
+                android:paddingLeft="@dimen/layout_width_padding_default"
+                android:paddingRight="@dimen/layout_width_padding_default"
+                android:paddingTop="10dp"
+                android:paddingBottom="10dp"
+                android:background="@drawable/bg_task_detail"
+                android:visibility="gone">
+
+                <TextView
+                    android:id="@+id/tv_material_price_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_large"
+                    android:text="@string/task_material_price" />
+
+
+                <TextView
+                    android:id="@+id/tv_material_price"
+                    android:layout_toRightOf="@id/tv_material_price_label"
+                    android:layout_alignTop="@id/tv_material_price_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_large" />
+
+                <TextView
+                    android:id="@+id/tv_service_price_label"
+                    android:layout_below="@id/tv_material_price_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_large"
+                    android:text="@string/task_service_price" />
+
+
+                <TextView
+                    android:id="@+id/tv_service_price"
+                    android:layout_toRightOf="@id/tv_service_price_label"
+                    android:layout_alignTop="@id/tv_service_price_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_large" />
+
+
+                <TextView
+                    android:id="@+id/tv_amount_price_label"
+                    android:layout_below="@id/tv_service_price_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_large"
+                    android:text="@string/task_amount_price" />
+
+
+                <TextView
+                    android:id="@+id/tv_amount_price"
+                    android:layout_toRightOf="@id/tv_amount_price_label"
+                    android:layout_alignTop="@id/tv_amount_price_label"
+                    android:layout_width="wrap_content"
+                    android:layout_height="wrap_content"
+                    android:textColor="@color/black"
+                    android:textSize="@dimen/text_size_large" />
+            </RelativeLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bt_complete"
+                    style="@style/WhiteButtonStyle"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:text="完成"
+                    android:onClick="onClick" />
+
+                <Button
+                    android:id="@+id/bt_next_day"
+                    style="@style/WhiteButtonStyle"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="次日"
+                    android:onClick="onClick" />
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:layout_marginLeft="20dp"
+                android:layout_marginRight="20dp"
+                android:layout_marginTop="10dp"
+                android:layout_marginBottom="10dp"
+                android:orientation="horizontal">
+
+                <Button
+                    android:id="@+id/bt_covenant"
+                    style="@style/WhiteButtonStyle"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:layout_marginRight="10dp"
+                    android:text="另约"
+                    android:onClick="onClick" />
+
+                <Button
+                    android:id="@+id/bt_cancel"
+                    style="@style/WhiteButtonStyle"
+                    android:layout_width="48dp"
+                    android:layout_height="wrap_content"
+                    android:layout_weight="1"
+                    android:text="@string/cancel"
+                    android:onClick="onClick" />
+            </LinearLayout>
+
+        </LinearLayout>
+    </ScrollView>
+
+</FrameLayout>

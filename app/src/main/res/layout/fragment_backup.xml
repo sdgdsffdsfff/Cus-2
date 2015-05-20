@@ -1,0 +1,129 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/fragment_back_color" >
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/white">
+
+        <LinearLayout
+            android:id="@+id/btn_fitting_search"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:clickable="true"
+            android:background="@drawable/bg_listview_white"
+            android:gravity="center" >
+
+            <TextView
+                android:paddingTop="13dp"
+                android:paddingBottom="13dp"
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:textSize="@dimen/text_size_large"
+                android:text="配件搜索"
+                android:textColor="@color/black"
+                android:gravity="center"
+                android:background="@null" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:src="@drawable/drop_down_arrow" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_my_fav"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:clickable="true"
+            android:background="@drawable/bg_listview_white" >
+
+            <TextView
+                android:paddingTop="13dp"
+                android:paddingBottom="13dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_large"
+                android:text="我的收藏"
+                android:textColor="@color/black"
+                android:background="@null" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:src="@drawable/drop_down_arrow" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:id="@+id/btn_shop_car"
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center"
+            android:clickable="true"
+            android:background="@drawable/bg_listview_white" >
+
+            <TextView
+                android:paddingTop="13dp"
+                android:paddingBottom="13dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_large"
+                android:text="购物车"
+                android:textColor="@color/black"
+                android:background="@null" />
+
+            <ImageView
+                android:layout_width="wrap_content"
+                android:layout_height="fill_parent"
+                android:src="@drawable/drop_down_arrow" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:orientation="horizontal"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content">
+
+        <View
+            android:layout_height="2dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@color/white" />
+
+        <View
+            android:id="@+id/view_underline_my_fav"
+            android:layout_height="2dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@color/red" />
+
+        <View
+            android:id="@+id/view_underline_shop_car"
+            android:layout_height="2dp"
+            android:layout_width="0dp"
+            android:layout_weight="1"
+            android:background="@color/red" />
+
+    </LinearLayout>
+
+    <FrameLayout
+        android:id="@+id/fl_backup_ops"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:clickable="false">
+
+    </FrameLayout>
+
+</LinearLayout>

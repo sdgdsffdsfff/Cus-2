@@ -1,0 +1,15 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_initial"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.suning.cus.activity.InitialActivity"
+    android:orientation="vertical"
+    android:id="@+id/ll_activity_base" >
+
+    <include layout="@layout/custom_action_bar"
+        android:id="@+id/layout_custom_title_bar" />
+
+</LinearLayout>

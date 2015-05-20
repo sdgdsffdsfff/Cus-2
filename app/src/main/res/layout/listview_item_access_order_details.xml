@@ -1,0 +1,274 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical" android:layout_width="fill_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/white" >
+
+    <TableLayout
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="25dp"
+        android:layout_marginRight="25dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="10dp" >
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_normal"
+                android:gravity="right"
+                android:text="凭证行项目: " />
+
+            <TextView
+                android:id="@+id/tv_order_buzei"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/text_size_normal"
+                android:text="10行项目" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_normal"
+                android:gravity="right"
+                android:text="数量: " />
+
+            <TextView
+                android:id="@+id/tv_order_target_qty"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/text_size_normal"
+                android:text="200" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_normal"
+                android:gravity="right"
+                android:text="单位: " />
+
+            <TextView
+                android:id="@+id/tv_order_target_qu"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/text_size_normal"
+                android:text="KG" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+
+            <TextView android:layout_width="fill_parent"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_normal"
+                android:gravity="right"
+                android:text="销售价格: " />
+
+            <TextView
+                android:id="@+id/tv_order_cmmdty_price"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/text_size_normal"
+                android:text="100元" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_normal"
+                android:gravity="right"
+                android:text="产品层次: " />
+
+            <TextView
+                android:id="@+id/tv_order_brand_code"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/text_size_normal"
+                android:text="层次1" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_normal"
+                android:gravity="right"
+                android:text="批次: " />
+
+            <TextView
+                android:id="@+id/tv_order_batch"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/text_size_normal"
+                android:text="批次2" />
+
+        </TableRow>
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_normal"
+                android:gravity="right"
+                android:text="装运条件: " />
+
+            <TextView
+                android:id="@+id/tv_order_shipment"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/text_size_normal"
+                android:text="装运条件托运" />
+
+        </TableRow>
+        <!--TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_normal"
+                android:gravity="right"
+                android:text="场景: " />
+
+            <TextView
+                android:id="@+id/tv_order_message_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_normal"
+                android:text="" />
+
+        </TableRow-->
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_normal"
+                android:gravity="right"
+                android:text="状态: " />
+
+            <TextView
+                android:id="@+id/tv_order_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/text_size_normal"
+                android:text="处理结束" />
+
+        </TableRow>
+
+        <!--TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_normal"
+                android:gravity="right"
+                android:text="物流状态: " />
+
+            <TextView
+                android:id="@+id/tv_order_logistic_log"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_normal"
+                android:text="到达南京" />
+
+        </TableRow-->
+
+        <!--TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_normal"
+                android:gravity="right"
+                android:text="备注: " />
+
+            <TextView
+                android:id="@+id/tv_order_desc"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/text_size_normal"
+                android:text="描述" />
+
+        </TableRow-->
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_normal"
+                android:gravity="right"
+                android:text="更新日期: " />
+
+            <TextView
+                android:id="@+id/tv_order_update_da"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/text_size_normal"
+                android:text="" />
+
+        </TableRow>
+
+
+        <TableRow
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content">
+
+            <TextView android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="@dimen/text_size_normal"
+                android:gravity="right"
+                android:text="备注: " />
+
+            <TextView
+                android:id="@+id/tv_wuliu_status"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:textSize="@dimen/text_size_normal"
+                android:text="" />
+
+        </TableRow>
+
+    </TableLayout>
+
+</LinearLayout>

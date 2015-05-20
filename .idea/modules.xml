@@ -1,0 +1,15 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ProjectModuleManager">
+    <modules>
+      <module fileurl="file://$PROJECT_DIR$/AnimationListView-lib/AnimationListView-lib.iml" filepath="$PROJECT_DIR$/AnimationListView-lib/AnimationListView-lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Controller-lib/Controller-lib.iml" filepath="$PROJECT_DIR$/Controller-lib/Controller-lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/DebugLog-lib/DebugLog-lib.iml" filepath="$PROJECT_DIR$/DebugLog-lib/DebugLog-lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/EventBus-lib/EventBus-lib.iml" filepath="$PROJECT_DIR$/EventBus-lib/EventBus-lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/PagerSlidingTabStrip-lib/PagerSlidingTabStrip-lib.iml" filepath="$PROJECT_DIR$/PagerSlidingTabStrip-lib/PagerSlidingTabStrip-lib.iml" />
+      <module fileurl="file://$PROJECT_DIR$/SuningCusService.iml" filepath="$PROJECT_DIR$/SuningCusService.iml" />
+      <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+    </modules>
+  </component>
+</project>
+

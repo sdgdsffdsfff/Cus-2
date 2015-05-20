@@ -1,0 +1,117 @@
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@color/cl_initial"
+    android:focusable="true"
+    android:focusableInTouchMode="true"
+    tools:context="com.suning.cus.activity.InitialActivity">
+
+    <LinearLayout
+        android:id="@+id/ll_w_manage_search"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentTop="true"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginTop="12dp"
+        android:layout_marginBottom="17dp"
+        android:layout_marginLeft="10dp"
+        android:layout_marginRight="10dp"
+        android:background="@drawable/xu_kuang" >
+
+        <ImageButton
+            android:id="@+id/bt_get_w_detail"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:padding="5dp"
+            android:background="@drawable/bg_actionbar_back"
+            android:src="@drawable/w_search_icon" />
+
+        <com.suning.cus.extras.ClearEditText
+            android:id="@+id/tv_w_search"
+            android:layout_width="0dp"
+            android:layout_height="match_parent"
+            android:layout_weight="1"
+            android:gravity="center_vertical"
+            android:hint="请输入商品编码或描述"
+            android:background="@null"
+            android:singleLine="true"
+            android:paddingRight="10dp"
+            android:textSize="@dimen/text_size_normal"
+            android:imeOptions="actionSearch" />
+
+    </LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/ll_w_manage_info"
+        android:orientation="horizontal"
+        android:layout_width="fill_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/ll_w_manage_search"
+        android:layout_alignParentLeft="true"
+        android:layout_alignParentStart="true"
+        android:padding="16dp"
+        android:background="#eae9e3"
+        android:visibility="gone" >
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="总额度: " />
+
+            <TextView
+                android:id="@+id/tv_total_limit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="xxx" />
+
+        </LinearLayout>
+
+        <LinearLayout
+            android:layout_width="0dp"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:gravity="center">
+
+            <TextView
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="已用额度: " />
+
+            <TextView
+                android:id="@+id/tv_freedom_limit"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:textSize="16sp"
+                android:text="123" />
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+    <include layout="@layout/listview_header_w_manage_task"
+        android:id="@+id/lv_header_w_manage"
+        android:layout_height="wrap_content"
+        android:layout_width="fill_parent"
+        android:layout_below="@+id/ll_w_manage_search" />
+
+    <ExpandableListView
+        android:id="@+id/lv_w_manage"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:layout_below="@+id/lv_header_w_manage"
+        android:groupIndicator="@null"
+        />
+
+</RelativeLayout>

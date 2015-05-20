@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="loading_query_price">获取价格中，请稍候...</string>
+    <string name="sure">确定</string>
+    <string name="alert_max_ava_num">不能超过最大可用数量</string>
+    <string name="alert_access_max_num_zero">此配件可用数量为0</string>
+
+
+    <string name="create_db_error">建表错误</string>
+</resources>

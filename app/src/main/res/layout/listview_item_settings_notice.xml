@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:padding="10dp"
+    android:background="@drawable/bg_listview_white"
+    android:clickable="true"
+    android:id="@+id/ll_item_settings_notice" >
+
+    <TextView
+        android:id="@+id/tv_notice_time"
+        android:layout_width="wrap_content"
+        android:layout_height="fill_parent"
+        android:gravity="center"
+        android:paddingRight="10dp"
+        android:textSize="@dimen/text_size_small"
+        android:text="2014-03-14" />
+
+    <TextView
+        android:id="@+id/tv_notice_title"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="1"
+        android:gravity="center"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:textSize="@dimen/text_size_normal"
+        android:text="集团2014第一季度新进高层集训启动"
+        android:drawableRight="@drawable/ic_global_arrow_right_2px"/>
+
+</LinearLayout>

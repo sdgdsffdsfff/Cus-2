@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="horizontal" android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:paddingTop="15dp"
+    android:paddingBottom="15dp"
+    android:background="@drawable/bg_listview_white"
+    android:id="@+id/ll_order_detail"
+    android:clickable="true" >
+
+    <TextView
+        android:id="@+id/tv_code_and_num"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.28"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="@dimen/text_size_small"
+        android:text="CMMDTY_CODE1*10" />
+
+    <TextView
+        android:id="@+id/tv_service_id"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.25"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="@dimen/text_size_small"
+        android:text="720002425" />
+
+    <TextView
+        android:id="@+id/tv_order_status"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.21"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="@dimen/text_size_small"
+        android:text="已完成" />
+
+    <TextView
+        android:id="@+id/tv_order_date"
+        android:layout_width="0dp"
+        android:layout_height="fill_parent"
+        android:layout_weight="0.24"
+        android:gravity="center"
+        android:layout_gravity="center"
+        android:textSize="@dimen/text_size_small"
+        android:text="2015-01-01" />
+</LinearLayout>
